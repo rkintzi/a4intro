@@ -1,0 +1,7 @@
+.editor {
+    display: flex;
+    flex-direction: row;
+}
+.editor > * {
+    flex: 1;
+}
