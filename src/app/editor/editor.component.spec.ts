@@ -22,4 +22,8 @@ describe('EditorComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  it('should render columns', async(() => {
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelectorAll('.editor div').length).toEqual(2);
+  }));
 });
