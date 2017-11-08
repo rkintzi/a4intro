@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-edit-area',
@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class EditAreaComponent implements OnInit {
 
   @Input() text: string;
+  @Output() textChange = new EventEmitter<string>();
 
   constructor() { }
 
