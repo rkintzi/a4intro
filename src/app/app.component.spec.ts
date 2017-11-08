@@ -1,6 +1,12 @@
+import { Component } from '@angular/core';
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-import { EditorComponent } from './editor/editor.component';
+
+@Component({
+    selector: 'app-editor',
+    template: '<div>mocked editor</div>',
+})
+class EditorComponent {}
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -25,6 +31,14 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to Markdown Editor!');
+    expect(compiled.querySelector('h1').textContent)
+          .toContain('Welcome to Markdown Editor!');
+  }));
+  it('should render markdown editor', async(() => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('div').textContent)
+          .toContain('mocked editor');
   }));
 });
