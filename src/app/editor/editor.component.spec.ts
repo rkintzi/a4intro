@@ -2,6 +2,11 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { Component, Input } from '@angular/core';
 
 import { EditorComponent } from './editor.component';
+import { EditorStateService } from '../editor-state.service';
+
+class EditorStateMock {
+    text: string;
+}
 
 describe('EditorComponent', () => {
   let component: EditorComponent;
@@ -27,13 +32,15 @@ describe('EditorComponent', () => {
         @Input() set text(val: string) { previewText = val; }
     }
 
+    const state = new EditorStateMock();
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
           EditorComponent,
           EditAreaComponent,
           PreviewComponent,
-      ]
+      ],
+      providers: [ { provide: EditorStateService, useValue: state } ],
     })
     .compileComponents();
   }));
@@ -59,7 +66,7 @@ describe('EditorComponent', () => {
     });
     it('should pass editor state to editor area', () => {
 
-        component.editorState = 'edited text';
+        state.text = 'edited text';
         fixture.detectChanges();
         expect(editAreaText).toEqual('edited text');
         expect(previewText).toEqual('edited text');

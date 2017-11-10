@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { EditorComponent } from './editor/editor.component';
 import { EditAreaComponent } from './edit-area/edit-area.component';
 import { PreviewComponent } from './preview/preview.component';
+import { EditorStateService } from './editor-state.service';
 
 
 @NgModule({
@@ -20,7 +21,7 @@ import { PreviewComponent } from './preview/preview.component';
     BrowserModule,
     FormsModule,
   ],
-  providers: [],
+  providers: [ EditorStateService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
