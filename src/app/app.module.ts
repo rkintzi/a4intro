@@ -8,6 +8,7 @@ import { EditorComponent } from './editor/editor.component';
 import { EditAreaComponent } from './edit-area/edit-area.component';
 import { PreviewComponent } from './preview/preview.component';
 import { EditorStateService } from './editor-state.service';
+import { EditorGroupComponent } from './editor-group/editor-group.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { EditorStateService } from './editor-state.service';
     AppComponent,
     EditorComponent,
     EditAreaComponent,
-    PreviewComponent
+    PreviewComponent,
+    EditorGroupComponent
   ],
   imports: [
     BrowserModule,

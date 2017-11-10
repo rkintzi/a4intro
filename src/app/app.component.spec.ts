@@ -8,12 +8,19 @@ import { AppComponent } from './app.component';
 })
 class EditorComponent {}
 
+@Component({
+    selector: 'app-editor-group',
+    template: '<ng-content></ng-content>',
+})
+
+class EditorGroupComponent {}
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent,
         EditorComponent,
+        EditorGroupComponent,
       ],
     }).compileComponents();
   }));
