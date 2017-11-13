@@ -77,7 +77,7 @@ http://cli.angular.io/
 
 Command line utility for Angular
 
-```
+```bash
 > npm install -g @angular/cli
 > ng new my-super-app
 > cd my-super-app
@@ -140,6 +140,10 @@ Command line utility for Angular
 > npm install
 ```
 
+```bash
+> git pull
+```
+
 <br>
 
 ```bash
@@ -155,6 +159,14 @@ Command line utility for Angular
 # Review #1
 What was generated for us?
 
+---
+
+# Review #1
+What was generated for us?
+
+```bash
+git reset --hard origin/task2
+```
 ---
 
 # Task #2
@@ -198,7 +210,7 @@ class: middle
 # First Component
 
 ```ts
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-editor',
@@ -208,8 +220,7 @@ import { Component, OnInit } from '@angular/core';
 export class EditorComponent {
 
 
-    constructor(public editorState: EditorStateService) {
-    }
+    constructor() { }
 
 }
 ```
@@ -266,7 +277,7 @@ export class EditorComponent {
    
 To compare with a suggested solution:
 ```bash
-> git diff task3
+> git diff origin/task3
 ```
 
 ---
@@ -275,12 +286,12 @@ To compare with a suggested solution:
 
 To compare with a suggested solution:
 ```bash
-> git diff task3
+> git diff origin/task3
 ```
 
 To obtain the suggested solution:
 ```bash
-> git reset --hard task3
+> git reset --hard origin/task3
 ```
 ---
 
@@ -363,8 +374,8 @@ To obtain the suggested solution:
 
 
 ```bash
-> git diff task4
-> git reset --hard task4
+> git diff origin/task4
+> git reset --hard origin/task4
 ```
 
 ---
@@ -752,8 +763,8 @@ textarea {
 # Review #5
 
 ```bash
-> git diff task5
-> git reset --hard task5
+> git diff origin/task5
+> git reset --hard origin/task5
 ```
 
 ---
@@ -915,8 +926,8 @@ index 69797f7..2621a01 100644
 # Review #6
 
 ```bash
-> git diff task6
-> git reset --hard task6
+> git diff origin/task6
+> git reset --hard origin/task6
 ```
 
 ---
@@ -1028,8 +1039,8 @@ Translate Markdown in to html
 # Review #7
 
 ```bash
-> git diff task7
-> git reset --hard task7
+> git diff origin/task7
+> git reset --hard origin/task7
 ```
 
 ---
