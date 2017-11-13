@@ -36,6 +36,7 @@ class: middle
 
 # What we gonna build today
 
+![Markdown Editor](screen2.png)
 
 ---
 
@@ -1049,7 +1050,15 @@ class: middle
 
 * Or to group utility functions 
 
+
 ---
+
+# Services and DI
+
+![](screen.png)
+
+---
+
 # Services and DI
 
 ```typescript
