@@ -231,7 +231,7 @@ export class EditorComponent {
 1. Generate `EditorComponent` with:
 
     ```bash
-    > ng generate component EditorComponent
+    > ng generate component Editor
     ```
 
 2. Write a template and CSS stylesheet so the component provides a two-column layout for our editor
@@ -599,7 +599,6 @@ import { Component, Input } from '@angular/core';
   selector: 'app-edit-area',
   templateUrl: './edit-area.component.html',
   styleUrls: ['./edit-area.component.css'],
-  encapsulation: ViewEncapsulation.None
 })
 export class EditAreaComponent {
 
@@ -1130,6 +1129,10 @@ export class EditorStateService {
 # Task #8
 
 2. Add second editor to a page and make them use shared state.
+
+    ```bash
+    > ng generate service EditorState
+    ```
 
 2. Update tests
 
