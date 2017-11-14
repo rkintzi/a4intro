@@ -2,7 +2,7 @@ class:  middle
 
 # Angular 2/4/5 
 **Radosław Kintzi**<br>
-@rkintzi
+@r_kintzi
 
 
 ---
@@ -1302,3 +1302,19 @@ export class EditorGroupComponent {
      }).compileComponents();
    }));
 ```
+
+
+---
+
+class: middle
+
+# Thanks
+
+
+---
+
+class: middle
+
+# Thanks
+
+Radosław Kintzi (@r_kintzi)
